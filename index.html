@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Hari Krishnan N — Cybersecurity Analyst, Penetration Tester & Security Enthusiast. I study how systems break so they can be fixed." />
+  <title>Hari Krishnan N — Cybersecurity Analyst &amp; Penetration Tester</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- ======== BOOT SCREEN ======== -->
+  <div id="boot-screen" aria-hidden="true">
+    <div class="boot-inner">
+      <p class="boot-line">>> initializing secure shell...</p>
+      <p class="boot-line">>> loading hari.krishnan profile [##########] 100%</p>
+      <p class="boot-line">>> access granted. welcome, operator.</p>
+      <div class="boot-bar"><span></span></div>
+    </div>
+  </div>
+
+  <!-- ======== MATRIX BACKGROUND ======== -->
+  <canvas id="matrix" aria-hidden="true"></canvas>
+
+  <!-- ======== NAV ======== -->
+  <header class="nav">
+    <div class="nav-inner container">
+      <a href="#home" class="logo">hari<span class="logo-cursor">_</span>kn</a>
+      <nav class="nav-links" id="nav-links" aria-label="Primary">
+        <a href="#home">home</a>
+        <a href="#about">whoami</a>
+        <a href="#skills">arsenal</a>
+        <a href="#services">services</a>
+        <a href="#projects">projects</a>
+        <a href="#timeline">timeline</a>
+        <a href="#contact">contact</a>
+      </nav>
+      <a href="#contact" class="btn btn-accent nav-cta">hire me</a>
+      <button class="nav-toggle" id="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <!-- ======== HERO ======== -->
+    <section id="home" class="hero">
+      <div class="container">
+        <p class="hero-tag reveal">&gt; security analyst <span class="sep">·</span> penetration tester <span class="sep">·</span> enthusiast</p>
+        <h1 class="hero-title reveal" data-text="HARI KRISHNAN N">HARI KRISHNAN N</h1>
+        <p class="hero-sub reveal">I break things <span class="accent">so they can't be broken.</span></p>
+
+        <div class="terminal reveal" aria-label="Terminal introducing Hari Krishnan N">
+          <div class="terminal-bar">
+            <span class="dot red"></span><span class="dot amber"></span><span class="dot green"></span>
+            <span class="terminal-title">hari@kali: ~/intro</span>
+          </div>
+          <div class="terminal-body">
+            <pre id="terminal-text"></pre>
+            <span class="cursor" id="terminal-cursor">▋</span>
+          </div>
+        </div>
+
+        <div class="hero-stats reveal">
+          <div class="stat"><span class="stat-num static">∞</span><span class="stat-label">curiosity, always on</span></div>
+          <div class="stat"><span class="stat-num static">24/7</span><span class="stat-label">hunting &amp; learning</span></div>
+          <div class="stat"><span class="stat-num static">100%</span><span class="stat-label">white-hat, always</span></div>
+          <div class="stat"><span class="stat-num static">0</span><span class="stat-label">systems harmed w/o permission</span></div>
+        </div>
+
+        <div class="hero-actions reveal">
+          <a href="#contact" class="btn btn-accent">initiate contact</a>
+          <a href="#projects" class="btn btn-ghost">view projects</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======== MARQUEE ======== -->
+    <div class="marquee" aria-hidden="true">
+      <div class="marquee-track">
+        <span>nmap</span><span class="m-sep">//</span><span>burp suite</span><span class="m-sep">//</span><span>wireshark</span><span class="m-sep">//</span><span>metasploit</span><span class="m-sep">//</span><span>john the ripper</span><span class="m-sep">//</span><span>sqlmap</span><span class="m-sep">//</span><span>gobuster</span><span class="m-sep">//</span><span>hydra</span><span class="m-sep">//</span><span>owasp zap</span><span class="m-sep">//</span><span>nuclei</span><span class="m-sep">//</span><span>bloodhound</span><span class="m-sep">//</span><span>mimikatz</span><span class="m-sep">//</span><span>ghidra</span><span class="m-sep">//</span>
+        <span>nmap</span><span class="m-sep">//</span><span>burp suite</span><span class="m-sep">//</span><span>wireshark</span><span class="m-sep">//</span><span>metasploit</span><span class="m-sep">//</span><span>john the ripper</span><span class="m-sep">//</span><span>sqlmap</span><span class="m-sep">//</span><span>gobuster</span><span class="m-sep">//</span><span>hydra</span><span class="m-sep">//</span><span>owasp zap</span><span class="m-sep">//</span><span>nuclei</span><span class="m-sep">//</span><span>bloodhound</span><span class="m-sep">//</span><span>mimikatz</span><span class="m-sep">//</span><span>ghidra</span><span class="m-sep">//</span>
+      </div>
+    </div>
+
+    <!-- ======== ABOUT ======== -->
+    <section id="about" class="section">
+      <div class="container">
+        <p class="section-kicker reveal">$ whoami</p>
+        <h2 class="section-title reveal">The analyst behind the terminal</h2>
+
+        <div class="about-grid">
+          <div class="about-text reveal">
+            <p>
+              Hi, I'm <span class="accent">Hari Krishnan</span> — a cybersecurity analyst and penetration
+              tester based in Kerala, India, trained at <span class="accent">RedTeam Hacker Academy</span>.
+              I'm an ethical hacker in the making: I study how systems break so I can help fix them —
+              <em>before someone with bad intentions finds them first</em>.
+            </p>
+            <p>
+              A penetration test is a simulation of a real attack: recon, enumeration, exploitation,
+              privilege escalation, and reporting. The goal is never to cause damage — it's to find
+              the cracks ethically, prove they're real, and show exactly how to close them:
+              <span class="accent">"here's what's broken, here's how I broke it, and here's how to fix it."</span>
+            </p>
+            <p>
+              Off the clock I'm the same person: grinding TryHackMe and HackTheBox rooms, taking apart
+              gadgets I don't need, and tinkering with a home lab full of intentionally vulnerable
+              machines — because in this field, learning never really stops.
+            </p>
+            <blockquote class="quote">
+              "Security isn't a destination, it's a habit — and the best way to protect something
+              is to understand exactly how it can be attacked." <span class="quote-attrib">— why I chose this path</span>
+            </blockquote>
+          </div>
+
+          <div class="about-side reveal">
+            <div class="whoami-card">
+              <div class="whoami-head">
+                <span class="status-dot"></span> profile://hari.krishnan
+              </div>
+              <ul class="whoami-list">
+                <li><span class="w-key">role</span> <span class="w-val">Cybersecurity Analyst · Pentester</span></li>
+                <li><span class="w-key">based</span> <span class="w-val">Palakkad, Kerala, IN — remote friendly</span></li>
+                <li><span class="w-key">clearance</span> <span class="w-val">open to junior roles</span></li>
+                <li><span class="w-key">education</span> <span class="w-val">RedTeam Hacker Academy</span></li>
+                <li><span class="w-key">focus</span> <span class="w-val">Web App · Network · Recon</span></li>
+                <li><span class="w-key">current_goal</span> <span class="w-val">OSCP · Bug Bounty — in progress</span></li>
+              </ul>
+            </div>
+
+            <div class="personality">
+              <h3>core personality modules</h3>
+              <div class="p-chip"><span class="p-name">curiosity</span><div class="p-bar"><span style="--p:98%"></span></div></div>
+              <div class="p-chip"><span class="p-name">healthy paranoia</span><div class="p-bar"><span style="--p:95%"></span></div></div>
+              <div class="p-chip"><span class="p-name">ethical boundaries</span><div class="p-bar"><span style="--p:100%"></span></div></div>
+              <div class="p-chip"><span class="p-name">coffee intake</span><div class="p-bar"><span style="--p:110%"></span></div></div>
+              <div class="p-chip"><span class="p-name">patience (brute force)</span><div class="p-bar"><span style="--p:90%"></span></div></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======== SKILLS ======== -->
+    <section id="skills" class="section alt">
+      <div class="container">
+        <p class="section-kicker reveal">$ cat arsenal.txt</p>
+        <h2 class="section-title reveal">Tools of the trade</h2>
+        <p class="section-desc reveal">A living inventory — always updating, like the threat landscape I work in.</p>
+
+        <div class="skill-group reveal">
+          <h3 class="skill-group-title">&gt; offensive_tools</h3>
+          <div class="skill-bars">
+            <div class="skill"><span class="skill-name">Burp Suite / Web App Testing</span><div class="bar"><span style="--p:95%"></span></div><span class="skill-pct">95%</span></div>
+            <div class="skill"><span class="skill-name">Nmap / Network Recon</span><div class="bar"><span style="--p:92%"></span></div><span class="skill-pct">92%</span></div>
+            <div class="skill"><span class="skill-name">Metasploit / Exploitation</span><div class="bar"><span style="--p:85%"></span></div><span class="skill-pct">85%</span></div>
+            <div class="skill"><span class="skill-name">Active Directory Attacks</span><div class="bar"><span style="--p:80%"></span></div><span class="skill-pct">80%</span></div>
+            <div class="skill"><span class="skill-name">Social Engineering / OSINT</span><div class="bar"><span style="--p:88%"></span></div><span class="skill-pct">88%</span></div>
+          </div>
+        </div>
+
+        <div class="skill-group reveal">
+          <h3 class="skill-group-title">&gt; languages</h3>
+          <div class="skill-bars">
+            <div class="skill"><span class="skill-name">Python</span><div class="bar"><span style="--p:90%"></span></div><span class="skill-pct">90%</span></div>
+            <div class="skill"><span class="skill-name">Bash / PowerShell</span><div class="bar"><span style="--p:88%"></span></div><span class="skill-pct">88%</span></div>
+            <div class="skill"><span class="skill-name">JavaScript</span><div class="bar"><span style="--p:75%"></span></div><span class="skill-pct">75%</span></div>
+            <div class="skill"><span class="skill-name">Go</span><div class="bar"><span style="--p:60%"></span></div><span class="skill-pct">60%</span></div>
+            <div class="skill"><span class="skill-name">SQL (and how to break it)</span><div class="bar"><span style="--p:85%"></span></div><span class="skill-pct">85%</span></div>
+          </div>
+        </div>
+
+        <div class="tool-cloud reveal" aria-label="More tools">
+          <span class="tc-title">&gt; also_in_the_bag:</span>
+          <span class="tool">Wireshark</span><span class="tool">SQLmap</span><span class="tool">Gobuster</span><span class="tool">Hydra</span><span class="tool">John the Ripper</span><span class="tool">Hashcat</span><span class="tool">Nuclei</span><span class="tool">Ghidra</span><span class="tool">BloodHound</span><span class="tool">Mimikatz</span><span class="tool">Splunk</span><span class="tool">Suricata</span><span class="tool">Docker</span><span class="tool">Kali</span><span class="tool">Proxmox</span><span class="tool">MITRE ATT&amp;CK</span><span class="tool">OWASP Top 10</span><span class="tool">NIST 800-115</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======== SERVICES ======== -->
+    <section id="services" class="section">
+      <div class="container">
+        <p class="section-kicker reveal">$ ./services --list</p>
+        <h2 class="section-title reveal">What I can do for you</h2>
+        <p class="section-desc reveal">Every engagement ends with a clear, jargon-free report — and a roadmap to fix what I found.</p>
+
+        <div class="cards">
+          <article class="card reveal">
+            <span class="card-icon">🕸️</span>
+            <h3>Web App Pentesting</h3>
+            <p>Deep-dive testing of web applications against the OWASP Top 10 — injection, auth flaws, business logic, API abuse — from black-box to white-box.</p>
+            <ul class="card-tags"><li>OWASP</li><li>API</li><li>B2B</li></ul>
+          </article>
+          <article class="card reveal">
+            <span class="card-icon">🌐</span>
+            <h3>Network &amp; Infrastructure</h3>
+            <p>External and internal network testing, wireless audits, and Active Directory attack-path mapping. If it's on your network, I've probably already got a theory about it.</p>
+            <ul class="card-tags"><li>AD</li><li>Pivoting</li><li>Wireless</li></ul>
+          </article>
+          <article class="card reveal">
+            <span class="card-icon">🎭</span>
+            <h3>Red Team Exercises</h3>
+            <p>Goal-oriented, time-boxed attacks against your people, processes, and tech — with full purple-team debriefs so your blue team learns from every move.</p>
+            <ul class="card-tags"><li>Purple Team</li><li>Phishing</li><li>Physical</li></ul>
+          </article>
+          <article class="card reveal">
+            <span class="card-icon">🕵️</span>
+            <h3>OSINT &amp; Social Engineering</h3>
+            <p>Simulated phishing campaigns and open-source intelligence gathering to test your human firewall — the layer most attackers actually target first.</p>
+            <ul class="card-tags"><li>Phishing</li><li>Vishing</li><li>Recon</li></ul>
+          </article>
+          <article class="card reveal">
+            <span class="card-icon">🛡️</span>
+            <h3>Vulnerability Assessment</h3>
+            <p>Automated + manual vulnerability scanning with risk-prioritized remediation guidance. When you have 10,000 findings, I help you find the 10 that matter.</p>
+            <ul class="card-tags"><li>Nessus</li><li>Risk</li><li>Compliance</li></ul>
+          </article>
+          <article class="card reveal">
+            <span class="card-icon">🧠</span>
+            <h3>Security Awareness Training</h3>
+            <p>Hands-on workshops for devs, ops, and leadership — because the strongest firewall in the world doesn't help if someone forwards a CEO email to "support".</p>
+            <ul class="card-tags"><li>Workshops</li><li>Secure Coding</li><li>CTF</li></ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======== PROJECTS ======== -->
+    <section id="projects" class="section alt">
+      <div class="container">
+        <p class="section-kicker reveal">$ ls ./projects</p>
+        <h2 class="section-title reveal">Things I've built &amp; broken</h2>
+        <p class="section-desc reveal">Open-source tooling, research, and writeups — the side projects that keep my skills sharp.</p>
+
+        <div class="projects">
+          <article class="project reveal">
+            <div class="project-head">
+              <span class="project-folder">📁</span>
+              <span class="project-links"><a href="#" aria-label="GitHub">&#128279;</a><a href="#" aria-label="External link">↗</a></span>
+            </div>
+            <h3>TryHackMe &amp; HackTheBox Labs</h3>
+            <p>Documenting my grind through TryHackMe and HackTheBox rooms — every machine rooted becomes a lesson shared. Currently working through the Penetration Testing path.</p>
+            <ul class="card-tags"><li>THM</li><li>HTB</li><li>Writeups</li></ul>
+          </article>
+
+          <article class="project reveal">
+            <div class="project-head">
+              <span class="project-folder">📁</span>
+              <span class="project-links"><a href="#" aria-label="GitHub">&#128279;</a><a href="#" aria-label="External link">↗</a></span>
+            </div>
+            <h3>Python Port Scanner</h3>
+            <p>A lightweight port scanner built in Python to sharpen my scripting and networking fundamentals — TCP connect scans, service detection, and clean output.</p>
+            <ul class="card-tags"><li>Python</li><li>Networking</li><li>CLI</li></ul>
+          </article>
+
+          <article class="project reveal">
+            <div class="project-head">
+              <span class="project-folder">📁</span>
+              <span class="project-links"><a href="#" aria-label="GitHub">&#128279;</a><a href="#" aria-label="External link">↗</a></span>
+            </div>
+            <h3>Phishing Email Analyzer</h3>
+            <p>A script that breaks down suspicious emails — headers, embedded links, and attachments — to spot the red flags before anyone clicks. Everyone's human firewall needs a second pair of eyes.</p>
+            <ul class="card-tags"><li>Python</li><li>Email</li><li>OSINT</li></ul>
+          </article>
+
+          <article class="project reveal">
+            <div class="project-head">
+              <span class="project-folder">📁</span>
+              <span class="project-links"><a href="#" aria-label="GitHub">&#128279;</a><a href="#" aria-label="External link">↗</a></span>
+            </div>
+            <h3>HomeLab Vulnerable Lab</h3>
+            <p>A home lab running intentionally vulnerable VMs to practice exploitation safely — my sandbox for mastering Burp Suite, Metasploit, and privilege escalation.</p>
+            <ul class="card-tags"><li>VMware</li><li>Burp</li><li>Metasploit</li></ul>
+          </article>
+
+          <article class="project reveal">
+            <div class="project-head">
+              <span class="project-folder">📁</span>
+              <span class="project-links"><a href="#" aria-label="GitHub">&#128279;</a><a href="#" aria-label="External link">↗</a></span>
+            </div>
+            <h3>CTF Notes &amp; Cheatsheets</h3>
+            <p>A growing collection of cheatsheets and walkthroughs covering everything from enumeration to post-exploitation — the notes I wish I'd had on day one.</p>
+            <ul class="card-tags"><li>Notes</li><li>Recon</li><li>Exploitation</li></ul>
+          </article>
+
+          <article class="project reveal">
+            <div class="project-head">
+              <span class="project-folder">📁</span>
+              <span class="project-links"><a href="#" aria-label="GitHub">&#128279;</a><a href="#" aria-label="External link">↗</a></span>
+            </div>
+            <h3>Bug Bounty Journey</h3>
+            <p>Logging my bug bounty hunting progress — recon automation, hunting my first real bugs, and learning how programs reward persistence.</p>
+            <ul class="card-tags"><li>Bug Bounty</li><li>Recon</li><li>Automation</li></ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======== TIMELINE ======== -->
+    <section id="timeline" class="section">
+      <div class="container">
+        <p class="section-kicker reveal">$ cat timeline.txt</p>
+        <h2 class="section-title reveal">The journey so far</h2>
+
+        <div class="timeline">
+          <div class="tl-item reveal">
+            <div class="tl-dot"></div>
+            <div class="tl-card">
+              <span class="tl-year">now</span>
+              <h3>Cybersecurity Analyst · Penetration Tester</h3>
+              <p>Applying my RedTeam Hacker Academy training in the real world — hunting vulnerabilities, sharpening my toolkit, and actively looking for my first full-time role.</p>
+            </div>
+          </div>
+          <div class="tl-item reveal">
+            <div class="tl-dot"></div>
+            <div class="tl-card">
+              <span class="tl-year">2025</span>
+              <h3>RedTeam Hacker Academy</h3>
+              <p>Immersive training in ethical hacking and penetration testing — from recon to exploitation, all in a lab, all completely ethical. This is where the tools became muscle memory.</p>
+            </div>
+          </div>
+          <div class="tl-item reveal">
+            <div class="tl-dot"></div>
+            <div class="tl-card">
+              <span class="tl-year">2024</span>
+              <h3>The switch to security</h3>
+              <p>Bought into the idea that understanding attackers is the best defense. Started with Linux, networking, and security fundamentals — and never looked back.</p>
+            </div>
+          </div>
+          <div class="tl-item reveal">
+            <div class="tl-dot"></div>
+            <div class="tl-card">
+              <span class="tl-year">before that</span>
+              <h3>The curiosity era</h3>
+              <p>The kid who took everything apart to see how it worked. Computers were the biggest puzzle of all — and I was hooked for good.</p>
+            </div>
+          </div>
+          <div class="tl-item reveal">
+            <div class="tl-dot"></div>
+            <div class="tl-card">
+              <span class="tl-year">always</span>
+              <h3>Ethics first</h3>
+              <p>Hacking skills are just tools — what matters is how you use them. I chose the white-hat path, and I'm here to stay.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======== CONTACT ======== -->
+    <section id="contact" class="section alt">
+      <div class="container">
+        <p class="section-kicker reveal">$ nc -lvp 443</p>
+        <h2 class="section-title reveal">Open a secure channel</h2>
+        <p class="section-desc reveal">Have a project, a job offer, or a CTF you want to talk shop about? My inbox is always listening — and unlike most endpoints, it's patched.</p>
+
+        <div class="contact-grid">
+          <form class="contact-form reveal" id="contact-form" novalidate>
+            <label for="name">name</label>
+            <input type="text" id="name" name="name" placeholder="Jane Doe" required />
+
+            <label for="email">email</label>
+            <input type="email" id="email" name="email" placeholder="jane@company.com" required />
+
+            <label for="message">message</label>
+            <textarea id="message" name="message" rows="5" placeholder="Tell me about your project..." required></textarea>
+
+            <button type="submit" class="btn btn-accent">encrypt &amp; send <span class="btn-arrow">→</span></button>
+            <p class="form-status" id="form-status" role="status" aria-live="polite"></p>
+          </form>
+
+          <div class="contact-info reveal">
+            <h3>Other channels</h3>
+            <ul class="channels">
+              <li><a href="mailto:hello@hari-k-n.dev"><span class="ch-ico">✉️</span> hello@hari-k-n.dev</a></li>
+              <li><a href="https://github.com/hari-k-n" target="_blank" rel="noopener"><span class="ch-ico">🐙</span> github.com/hari-k-n</a></li>
+              <li><a href="https://www.linkedin.com/in/hari-k-n/" target="_blank" rel="noopener"><span class="ch-ico">💼</span> linkedin.com/in/hari-k-n</a></li>
+            </ul>
+            <div class="pgp-note">
+              <span class="pgp-title">// pgp key</span>
+              <code>0x5EC4B17D — full key on request.<br/>sign everything, trust nothing.</code>
+            </div>
+            <p class="availability">
+              <span class="status-dot"></span>              availability: open to SOC analyst &amp; junior pentest roles — response within 24h
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <p>© 2026 hari.krishnan — built with curiosity &amp; caffeine.</p>
+      <p class="footer-fine">no systems were harmed in the making of this website <span class="accent">(except mine, during testing)</span></p>
+    </div>
+  </footer>
+
+  <!-- Konami easter egg -->
+  <div id="easter-egg" aria-hidden="true">ACCESS GRANTED. <span>nice keypresses, operator.</span></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
