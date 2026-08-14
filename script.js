@@ -65,7 +65,7 @@
   if (termText) {
     const lines = [
       "$ whoami",
-      "hari.krishnan.n — cybersecurity analyst / pentester",
+      "hari.krishnan — cyber security analyst",
       "",
       "$ cat about_me.txt",
       "I study how systems break so I can help",
@@ -73,8 +73,8 @@
       "intentions finds them first.",
       "",
       "$ ./status --check",
-      "[ OK ] curiosity........... enabled",
-      "[ OK ] persistence......... enabled",
+      "[ OK ] tryhackme........... top 3%",
+      "[ OK ] certifications...... CSA · SOC (2024)",
       "[ OK ] ethics.............. MAX",
       "[ !! ] coffee intake....... CRITICAL",
       "",
